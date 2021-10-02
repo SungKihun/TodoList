@@ -63,7 +63,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="DkG-ah-KMt" id="ZKV-kL-5jA"/>
-                                            <outlet property="prioirtyView" destination="cyW-hb-pcf" id="b9d-zn-sZc"/>
+                                            <outlet property="priorityView" destination="cyW-hb-pcf" id="b9d-zn-sZc"/>
                                             <outlet property="topTitleLabel" destination="qKG-ea-a7b" id="JXB-Xz-bxk"/>
                                         </connections>
                                     </tableViewCell>

@@ -10,7 +10,7 @@ import UIKit
 class TodoCell: UITableViewCell {
 
     @IBOutlet var topTitleLabel: UILabel!
-    @IBOutlet var prioirtyView: UIView!
+    @IBOutlet var priorityView: UIView!
     @IBOutlet var dateLabel: UILabel!
     
     override func awakeFromNib() {
