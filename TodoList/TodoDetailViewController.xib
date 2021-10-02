@@ -11,9 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodoDetailViewController" customModule="TodoList" customModuleProvider="target">
             <connections>
+                <outlet property="deleteButton" destination="KJ6-Ik-ljb" id="dCt-6x-b9V"/>
                 <outlet property="highButton" destination="wgK-nh-exo" id="Bed-Bw-2QJ"/>
                 <outlet property="lowButton" destination="amP-fO-LpB" id="T5B-LY-HeV"/>
                 <outlet property="normalButton" destination="PWe-xZ-bxw" id="PtS-CB-NM5"/>
+                <outlet property="saveButton" destination="Go7-g3-Wha" id="NWT-gH-sFD"/>
                 <outlet property="titleTextField" destination="PMv-ZE-4QG" id="Pu0-V0-aOP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -20,6 +20,9 @@ class TodoDetailViewController: UIViewController {
     @IBOutlet var normalButton: UIButton!
     @IBOutlet var highButton: UIButton!
     
+    @IBOutlet var deleteButton: UIButton!
+    @IBOutlet var saveButton: UIButton!
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     var selectedTodoList: TodoList?
@@ -34,12 +37,19 @@ class TodoDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         if let hasData = selectedTodoList {
             titleTextField.text = hasData.title
             
             priority = PriorityLevel(rawValue: hasData.priorityLevel)
             
             makePriorityButtonDesign()
+            
+            deleteButton.isHidden = false
+            saveButton.setTitle("Update", for: .normal)
+        } else {
+            deleteButton.isHidden = true
+            saveButton.setTitle("Save", for: .normal)
         }
     }
     
